@@ -1,0 +1,156 @@
+!!! XML
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:http => {:equiv => "X-UA-Compatible"}, :content => "IE=edge"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+    %meta{:content => "", :name => "Cellphone KBS"}
+    %meta{:content => "", :name => "author"}
+    %title Cellphone KBS
+    %link{:rel => "icon", :href => "bootstrap/docs/favicon.ico"}
+    
+    / Bootstrap core CSS
+    %link{:href => "bootstrap/dist/css/bootstrap.min.css", :rel => "stylesheet"}
+    / Custom styles for fixing padding
+    :css
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+    / Custom style for image jumbotron/banner
+    %link{:href => "custom/css/jumbostyle.css", :rel => "stylesheet"}
+    / Just for debugging purposes. Don't actually copy these 2 lines!
+    / [if lt IE 9] <script src="bootstrap/assets/js/ie8-responsive-file-warning.js"></script>
+    %script{:src => "bootstrap/assets/js/ie-emulation-modes-warning.js"}
+    / HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    / [if lt IE 9]
+    %script{:src => "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}
+    %script{:src => "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}
+
+  %body
+    %nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href => "index.html"} Cellphone KBS
+        #navbar.navbar-collapse.collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{:href => "#"} Home
+            %li
+              %a{:href => "#"} Testpage
+            %li
+              %a{:href => "#"} Testpage2
+        / /.navbar-collapse
+    .container
+      .row
+        .col-md-6
+          %h2 Please fill out cell phone requirements
+          %p Our system will look up all cellphones with listed matches.  Leave a field blank if you do not want it included in the search.
+          
+          /.dropdown.open
+          /  %button#dropdownMenu1.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+          /    Dropdown
+          /  .dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+          /    %a.dropdown-item{:href => "#"} Action
+          /    %a.dropdown-item{:href => "#"} Another action
+          /    %a.dropdown-item{:href => "#"} Something else here
+
+          %br/
+
+          %form
+            .form-group
+              %label{:for => "cellform"} Make
+              %select.form-control
+                %option -----
+                %option Toshiba
+                %option iNQ
+                %option T-Mobile
+                %option HP
+                %option Apple
+
+            .form-group
+              %label{:for => "cellform"} Name
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} URL
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} OS
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} Resolution
+              %select.form-control
+                %option -----
+                %option 640 x 1136 pixels
+                %option 480 x 800 pixels
+                %option 800 x 1280 pixels
+
+            .form-group
+              %label{:for => "cellform"} Primary Camera
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} Secondary Camera
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} Storage
+              %select.form-control
+                %option -----
+                %option 16 GB
+                %option 32 GB
+                %option 64 GB
+                %option 128 GB
+
+            .form-group
+              %label{:for => "cellform"} Memory
+              %select.form-control
+                %option -----
+                %option 1GB RAM
+                %option 2GB RAM
+
+            .form-group
+              %label{:for => "cellform"} Mem Card Slot
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} Talk time
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} Loudspeaker
+              %select.form-control
+                %option -----
+
+            .form-group
+              %label{:for => "cellform"} 3.5mm Jack
+              %select.form-control
+                %option -----
+
+            %button.btn.btn-primary{:type => "submit"} Submit
+
+      %hr/
+
+      %footer
+        %p &copy; Cellphone KBS 2016
+
+    / Javascript
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"}
+    %script{:src => "bootstrap/dist/js/bootstrap.min.js"}
+    %script{:src => "bootstrap/assets/js/ie10-viewport-bug-workaround.js"}

@@ -1,0 +1,6 @@
+# Gitignore
+
+index.html
+50x.html
+build.zip
+/old/
